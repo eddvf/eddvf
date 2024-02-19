@@ -1,4 +1,12 @@
-/* Basic Reset */
+
+:root {
+    --primary-color: #151515; 
+    --text-color: #16C60C; 
+    --nav-bg-color: #151515; 
+    --body-bg-color: #151515; 
+    --link-color: #11D116; 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,25 +15,25 @@
 
 body, html {
     height: 100%;
-    background-color: #000; /* Black background */
+    background-color: var(--body-bg-color); /* Black background */
 }
 
 /* Terminal Font */
 body {
     font-family: 'Courier New', Courier, monospace;
-    color: #0f0; /* Green text */
+    color: var(--text-color); 
     font-size: 16px;
     padding: 20px;
 }
 
 /* Navbar customizations */
 .nav-wrapper {
-    background-color: #000; /* Black */
+    background-color:var(--body-bg-color); 
     box-shadow: none;
 }
 
 .nav-wrapper a {
-    color: #0f0; /* Green text */
+    color: var(--text-color); /* Green text */
 }
 
 /* Hiding the sidenav trigger and adjusting logo */
@@ -35,7 +43,7 @@ body {
 
 .brand-logo {
     font-family: 'Courier New', Courier, monospace;
-    color: #0f0; /* Terminal green color */
+    color: var(--text-color); 
     font-size: 16px; /* Adjusted font size */
     display: flex;
     align-items: center;
@@ -49,13 +57,13 @@ body {
 
 /* Table customizations to fit terminal theme */
 table, th, td {
-    border: 1px solid #0f0; /* Green borders */
+    border: 1px solid var(--text-color); /* Green borders */
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
-    background-color: #000; /* Black background */
+    background-color: var(--body-bg-color); /* Black background */
 }
 
 th, td {
@@ -64,11 +72,11 @@ th, td {
 }
 
 th {
-    background-color: #003300; /* Darker green background for headers */
+    background-color: var(--body-bg-color); /* Darker green background for headers */
 }
 
 a {
-    color: #0f0; /* Green text for links */
+    color: var(--text-color); /* Green text for links */
 }
 
 /* Custom Scrollbar */
@@ -94,6 +102,6 @@ a {
 
 .blinking-cursor {
     animation: blink 1s step-end infinite;
-    color: #0f0; /* Ensure the cursor color matches the terminal text */
+    color: var(--text-color); /* Ensure the cursor color matches the terminal text */
     font-size: 22px; /* Ensure the cursor font size matches the text */
  }

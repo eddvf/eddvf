@@ -38,7 +38,13 @@ body {
 
 /* Hiding the sidenav trigger and adjusting logo */
 .sidenav-trigger {
-    display: none;
+    display: block;
+}
+
+@media screen and (min-width: 993px) {
+    .sidenav-trigger {
+        display: none;
+    }
 }
 
 .brand-logo {

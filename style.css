@@ -1,3 +1,93 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background-color: #000; /* Black background */
+}
+
+/* Terminal Font */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #0f0; /* Green text */
+    font-size: 16px;
+    padding: 20px;
+}
+
+/* Navbar customizations */
 .nav-wrapper {
-    background-color: #005f73; /* Example: Deep blue */
+    background-color: #000; /* Black */
+    box-shadow: none;
+}
+
+.nav-wrapper a {
+    color: #0f0; /* Green text */
+}
+
+/* Hiding the sidenav trigger and adjusting logo */
+.sidenav-trigger {
+    display: none;
+}
+
+.brand-logo img {
+    filter: brightness(0) invert(1); /* Invert logo color to fit terminal theme */
+}
+
+/* Section Styling */
+.section {
+    margin-top: 20px;
+}
+
+/* Table customizations to fit terminal theme */
+table, th, td {
+    border: 1px solid #0f0; /* Green borders */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #000; /* Black background */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #003300; /* Darker green background for headers */
+}
+
+a {
+    color: #0f0; /* Green text for links */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #005500; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #007700; 
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+#blinking-cursor {
+    animation: blink 1s infinite;
 }

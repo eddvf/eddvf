@@ -33,9 +33,14 @@ body {
     display: none;
 }
 
-.brand-logo img {
-    filter: brightness(0) invert(1); /* Invert logo color to fit terminal theme */
+.brand-logo {
+    font-family: 'Courier New', Courier, monospace;
+    color: #0f0; /* Terminal green color */
+    font-size: 16px; /* Adjusted font size */
+    display: flex;
+    align-items: center;
 }
+
 
 /* Section Styling */
 .section {
@@ -84,10 +89,11 @@ a {
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
 
-#blinking-cursor {
-    animation: blink 1s infinite;
-}
+.blinking-cursor {
+    animation: blink 1s step-end infinite;
+    color: #0f0; /* Ensure the cursor color matches the terminal text */
+    font-size: 22px; /* Ensure the cursor font size matches the text */
+ }

@@ -55,6 +55,11 @@ body {
     align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+    .brand-logo {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+}
 
 /* Section Styling */
 .section {

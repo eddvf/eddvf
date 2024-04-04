@@ -13,6 +13,14 @@
     box-sizing: border-box;
 }
 
+
+#coursesTable tbody td,
+#coursesTable thead th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
 body, html {
     height: 100%;
     background-color: var(--body-bg-color); /* Black background */

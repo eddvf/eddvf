@@ -55,9 +55,19 @@ body {
     align-items: center;
 }
 
+/* Existing styles */
 @media screen and (max-width: 600px) {
     .brand-logo {
-        font-size: 12px; /* Smaller font size for mobile */
+        font-size: 10px; /* Even smaller font size for mobile */
+        padding-left: 5px; /* Reduce padding if necessary */
+        padding-right: 5px; /* Reduce padding if necessary */
+    }
+}
+
+/* Additional suggestion */
+@media screen and (max-width: 400px) {
+    .brand-logo {
+        font-size: 8px; /* Further reduction for very small devices */
     }
 }
 

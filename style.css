@@ -81,7 +81,8 @@ body {
 
 /* Section Styling */
 .section {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /* Table customizations to fit terminal theme */

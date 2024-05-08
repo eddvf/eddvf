@@ -20,6 +20,12 @@
     vertical-align: middle;
 }
 
+#languagesTable tbody td,
+#languagesTable thead th {
+    text-align: center;
+    vertical-align: middle;
+}
+
 
 body, html {
     height: 100%;

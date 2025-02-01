@@ -143,3 +143,130 @@ a {
     color: var(--text-color); /* Ensure the cursor color matches the terminal text */
     font-size: 22px; /* Ensure the cursor font size matches the text */
  }
+
+ 
+/* Add to CSS */
+.page-footer {
+    background-color: #000;
+    border-top: 1px solid #16C60C;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .footer-text, .footer-link {
+    color: #16C60C;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-separator {
+    color: #16C60C;
+    margin: 0 0.5rem;
+  }
+  
+  .social-icon {
+    color: #16C60C;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #20C20E;
+  }
+  
+  .social-icon i {
+    font-size: 1.5rem;
+  }
+  
+  #back-to-top {
+    background-color: #16C60C;
+    color: #000;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  #back-to-top:hover {
+    background-color: #20C20E;
+  }
+  
+  @media (max-width: 600px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-social {
+      margin-top: 1rem;
+    }
+    
+    .social-icon {
+      margin: 0 0.75rem;
+    }
+  }
+
+
+
+  .edu-logo-title {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.edu-logo {
+    width: 120px;  /* Adjust based on your logo */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.edu-title h3 {
+    margin: 0;
+    color: #16C60C;
+    font-size: 1.2rem;
+}
+
+.edu-subtitle {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    color: #20C20E;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+.edu-card{
+    margin-bottom: 50px;
+}
+
+
+@media (max-width: 600px) {
+    .edu-logo-title {
+        gap: 1rem;
+    }
+    
+    .edu-logo {
+        width: 40px;
+    }
+    
+    .edu-title h3 {
+        font-size: 1.1rem;
+    }
+    
+    .edu-subtitle {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+   
+}

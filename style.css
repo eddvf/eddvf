@@ -71,6 +71,18 @@ body {
     align-items: center;
 }
 
+nav ul li a {
+    color: var(--text-color);
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #20C20E; /* Brighter green */
+    text-shadow: 0 0 8px #20C20E, 0 0 12px #20C20E; /* Neon glow effect */
+}
+
 /* Existing styles */
 @media screen and (max-width: 600px) {
     .brand-logo {
@@ -270,3 +282,220 @@ a {
 
    
 }
+
+/* Row Styling */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px; /* Negates the bottom margin to maintain horizontal spacing */
+    margin-left: -10px; /* Maintains existing horizontal spacing logic */
+    margin-right: -10px; /* Maintains existing horizontal spacing logic */
+    align-items: stretch;
+}
+
+/* Column Styling */
+.col {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px; /* Adds vertical spacing between the rows */
+    box-sizing: border-box;
+    flex: 1 1 300px; /* Adjust as necessary to maintain the desired width */
+}
+
+
+
+/* Card Styling */
+.card {
+    background-color: var(--body-bg-color);
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px; /* Adjusted margin */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures footer at bottom */
+    height: 100%;
+}
+
+.card-content {
+    padding: 15px;
+    flex-grow: 1; /* Allows the content to expand and push the footer down */
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #20C20E, 0 0 10px rgba(32, 194, 14, 0.5);
+}
+
+
+.card p {
+    color: var(--text-color);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.card-action {
+    padding: 10px 20px;
+    background-color: #000;
+    border-top: 1px solid var(--text-color);
+    text-align: center; /* Centers the link */
+}
+
+.card-action a {
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none; /* Removes underline */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(32, 194, 14, 0.3);
+}
+
+/* Chip Styling */
+.chip {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #005500;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+/* the courses CSS */
+
+/* Courses Grid */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Individual Course Card */
+.course-card {
+    background-color: var(--body-bg-color);
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.course-card:hover {
+    box-shadow: 0 4px 10px rgba(32, 194, 14, 0.3);
+}
+
+/* Course Title */
+.course-card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+/* Make EPFL/ETHZ more visible */
+.course-institution {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.course-institution.epfl { color: #e2001a; }  /* EPFL Red */
+.course-institution.ethz { color: #215CAF; }  /* ETHZ Blue */
+
+/* Updated Course Link Button */
+.course-link {
+    display: inline-block;
+    padding: 8px 15px;
+    color: #20C20E;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #20C20E;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Subtle hover effect */
+.course-link:hover {
+    background-color: rgba(32, 194, 14, 0.1);
+    transform: scale(1.05);
+}
+
+
+
+/* Languages Grid */
+.languages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Language Card */
+.language-card {
+    background-color: var(--body-bg-color);
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.language-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(32, 194, 14, 0.3);
+}
+
+/* Language Title */
+.language-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+/* Language Level Badge */
+.language-level {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Color-coded Levels */
+.native {
+    background-color: #20C20E; /* Green for native */
+    color: #000;
+}
+
+.bilingual {
+    background-color: #0055A4; /* Blue for bilingual */
+    color: white;
+}
+
+.fluent {
+    background-color: #FF8C00; /* Orange for fluent */
+    color: white;
+}
+
+.basic {
+    background-color: #808080; /*
+
+
+  

@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,7 +28,6 @@
           
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#aboutme">/About Me</a></li>
             <li><a href="#education">/Education</a></li>
             <li><a href="#projects">/Projects</a></li>
             <li><a href="#courses">/Courses</a></li>
@@ -119,190 +119,215 @@
             
         </div>
     </section>
-    
+
+
     
 
 
 
-    
-    
-      <section id="projects" class="section">
+
+
+
+
+    <section id="projects" class="section">
         <div class="container">
             <h2 class="header">Projects & Experiences</h2>
-            <table class="highlight responsive-table">
-                <thead>
-                    <tr>
-                        <th>Project Name</th>
-                        <th>Description</th>
-                        <th>Technologies Used</th>
-                        <th>Link</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>ACME Client</td>
-                        <td>Public Key Infrastructures (PKIs) using X.509 certiﬁcates are used for many purposes, the most signiﬁcant
-                            of which is the authentication of domain names. Certiﬁcate Authorities (CAs) are trusted to verify that an
-                            applicant for a certiﬁcate legitimately represents the domain name(s) in the certiﬁcate. Traditionally, this
-                            veriﬁcation is done through various ad-hoc methods.
-                            The Automatic Certiﬁcate Management Environment (ACME) protocol (RFC8555) aims to facilitate the
-                            automation of certiﬁcate issuance by creating a standardized and machine-friendly protocol for certiﬁcate
-                            management. </td>
-                        <td>Python</td>
-                        <td><a href="Projects/ACME_Client/acme-project-description.pdf" target="_blank">View Decription</a></td>
-                    </tr>
-                    <tr>
-                        <td>SMPC Project</td>
-                        <td>The goal of this project is to implement and apply a secure multi-party computation engine
-                            (secure MPC, or SMC) in a semi-honest (passive) adversarial setting using the Python 3 programming language. 
-                            We implement an SMC framework that works for generic arithmetic circuits assuming the existence of a trusted third party. </td>
-                        <td>Python</td>
-                        <td><a href="Projects/SMPC/Report.pdf" target="_blank">View Report</a></td>
-                    </tr>
-                    <tr>
-                        <td>Secret-Stroll Project</td>
-                        <td>In this project, we first design and implement an anonymous authentication mechanism
-                            using attribute-based credentials.Then we conduct a privacy evaluation of a location-based service and propose
-                            and evaluate a privacy defense. Finally, we implement and evaluate a network-traffic fingerprinting attack
-                            when a user makes a location query. </td>
-                        <td>Python</td>
-                        <td><a href="Projects/SecretStroll/secretstroll_report.pdf" target="_blank">View Report</a></td>
-                    </tr>
-                    <tr>
-                        <td>CTFs</td>
-                        <td>Catch The Flag (CTF) is not exactly a project but rather a collection of exploits on different softwares and systems. Notable affected domains are software security, 
-                            system security, binary exploitation, effective mitigations, fault isolation/privilege separation, strong sanitization, and software testing (fuzzing). For C programs, the main 
-                            reverse engineering tool used was Ghidra and GDB. 
-                        </td>
-                        <td>Python, C, Ghidra</td>
-                        <td><a href="Projects/CTF/writeup_m3.pdf" target="_blank">Example Writeup</a></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">ACME Client</span>
+                            <p> Certiﬁcate Authorities (CAs) are trusted to verify that an applicant for a certiﬁcate legitimately represents the domain name(s) in the certiﬁcate. 
+                                Traditionally, this veriﬁcation is done through various ad-hoc methods.
+                                The Automatic Certiﬁcate Management Environment (ACME) protocol (RFC8555) aims to facilitate the
+                                automation of certiﬁcate issuance by creating a standardized and machine-friendly protocol for certiﬁcate
+                                management.</p>
+                            <div class="chip">Python</div>
+                        </div>
+                        <div class="card-action">
+                            <a href="Projects/ACME_Client/acme-project-description.pdf" target="_blank">View Description</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 2 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">SMPC Project</span>
+                            <p>The goal of this project is to implement and apply a secure multi-party computation engine
+                                (secure MPC, or SMC) in a semi-honest (passive) adversarial setting using the Python 3 programming language. 
+                                We implement an SMC framework that works for generic arithmetic circuits assuming the existence of a trusted third party.</p>
+                            <div class="chip">Python</div>
+                        </div>
+                        <div class="card-action">
+                            <a href="Projects/SMPC/Report.pdf" target="_blank">View Report</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 3 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Secret-Stroll Project</span>
+                            <p>In this project, we first design and implement an anonymous authentication mechanism
+                                using attribute-based credentials.Then we conduct a privacy evaluation of a location-based service and propose
+                                and evaluate a privacy defense. Finally, we implement and evaluate a network-traffic fingerprinting attack
+                                when a user makes a location query.</p>
+                            <div class="chip">Python</div>
+                        </div>
+                        <div class="card-action">
+                            <a href="Projects/SecretStroll/secretstroll_report.pdf" target="_blank">View Report</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Project 4 -->
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">CTFs</span>
+                            <p>Catch The Flag (CTF) is not exactly a project but rather a collection of exploits on different softwares and systems. Notable affected domains are software security, 
+                                system security, binary exploitation, effective mitigations, fault isolation/privilege separation, strong sanitization, and software testing (fuzzing). For C programs, the main 
+                                reverse engineering tool used was Ghidra and GDB. </p>
+                            <div class="chip">Python</div>
+                            <div class="chip">C</div>
+                            <div class="chip">Ghidra</div>
+                        </div>
+                        <div class="card-action">
+                            <a href="Projects/CTF/writeup_m3.pdf" target="_blank">Example Writeup</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
 
     <section id="courses" class="section">
         <div class="container">
             <h2 class="header">Courses</h2>
-            <table id="coursesTable" class="highlight responsive-table">
-                <thead>
-                    <tr>
-                        <th>Course Name</th>
-                        <th>Institution</th>
-                        <th>Link</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Advanced Algorithms</td>
-                        <td>EPFL</td>
-                        <td><a href="https://staging-edu.epfl.ch/coursebook/fr/algorithms-ii-CS-450" target="_blank">View Course</a></td>
-                    </tr>
-                    <tr>
-                        <td>Information Security Lab</td>
-                        <td>ETHZ</td>
-                        <td><a href="https://appliedcrypto.ethz.ch/education/past-courses/as-2020/isl-autumn2020.html" target="_blank">View Course</a></td>
-                    </tr>
-                    <tr>
-                        <td>Systems for data management and
-                            data science</td>
-                        <td>EPFL</td>
-                        <td><a href="https://edu.epfl.ch/coursebook/en/systems-for-data-management-and-data-science-CS-460" target="_blank">View Course</a></td>
-                    </tr>
-                    <tr>
-                        <td>Big Data</td>
-                        <td>ETHZ</td>
-                        <td><a href="https://systems.ethz.ch/education/courses/2022-autumn-semester/big-data.html" target="_blank">View Course</a></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Applied Cryptography</td>
-                        <td>ETHZ</td>
-                        <td><a href="https://appliedcrypto.ethz.ch/education/past-courses/ss-2020/ac-ss2020.html" target="_blank">View Course</a></td>
-                    </tr>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <h3>Advanced Algorithms</h3>
+                    <p class="course-institution epfl">EPFL</p>
+                    <a href="https://staging-edu.epfl.ch/coursebook/fr/algorithms-ii-CS-450" target="_blank" class="course-link">View Course</a>
+                </div>
+    
+                <div class="course-card">
+                    <h3>Information Security Lab</h3>
+                    <p class="course-institution ethz">ETHZ</p>
+                    <a href="https://appliedcrypto.ethz.ch/education/past-courses/as-2020/isl-autumn2020.html" target="_blank" class="course-link">View Course</a>
+                </div>
 
-                    <tr>
-                        <td>Network Security</td>
-                        <td>ETHZ</td>
-                        <td><a href="https://www.vorlesungen.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2023W&ansicht=ALLE&lerneinheitId=173649&lang=en" target="_blank">View Course</a></td>
-                    </tr>
+                <div class="course-card">
+                    <h3>Systems for data management and data science</h3>
+                    <p class="course-institution epfl">EPFL</p>
+                    <a href="https://edu.epfl.ch/coursebook/en/systems-for-data-management-and-data-science-CS-460" target="_blank" class="course-link">View Course</a>
+                </div>
 
-                    
-                    <tr>
-                        <td>Advanced topics on privacy enhancing technologies</td>
-                        <td>EPFL</td>
-                        <td><a href="https://edu.epfl.ch/coursebook/en/advanced-topics-on-privacy-enhancing-technologies-CS-523" target="_blank">View Course</a></td>
-                    </tr>
-                    <tr>
-                        <td>Number Theory in Cryptography</td>
-                        <td>EPFL</td>
-                        <td><a href="https://moodlearchive.epfl.ch/2020-2021/enrol/index.php?id=14353" target="_blank">View Course</a></td>
-                    </tr>
-                    <tr>
-                        <td>Software Security</td>
-                        <td>EPFL</td>
-                        <td><a href="https://edu.epfl.ch/coursebook/en/software-security-CS-412" target="_blank">View Course</a></td>
-                    </tr>
-                    <tr>
-                        <td>Seminar on security protocols and applications</td>
-                        <td>EPFL</td>
-                        <td><a href="https://edu.epfl.ch/coursebook/fr/student-seminar-security-protocols-and-applications-COM-506" target="_blank">View Course</a></td>
-                    </tr>
-                    <tr>
-                        <td>Machine Learning</td>
-                        <td>EPFL</td>
-                        <td><a href="https://www.epfl.ch/labs/mlo/machine-learning-cs-433/" target="_blank">View Course</a></td>
-                    </tr>
-                    <tr>
-                        <td>TCP/IP Networking</td>
-                        <td>EPFL</td>
-                        <td><a href="https://edu.epfl.ch/coursebook/en/tcp-ip-networking-COM-407" target="_blank">View Course</a></td>
-                    </tr>
-                    
 
-                    <tr>
-                        <td>Privacy Enhancing Technologies</td>
-                        <td>ETHZ</td>
-                        <td><a href="https://spylab.ai/teaching/pets-f24/" target="_blank">View Course</a></td>
-                    </tr>
-                    <tr>
-                        <td>Information security and privacy</td>
-                        <td>EPFL</td>
-                        <td><a href="https://edu.epfl.ch/coursebook/en/information-security-and-privacy-COM-402" target="_blank">View Course</a></td>
-                    </tr>
-                </tbody>
-            </table>
+
+                <div class="course-card">
+                    <h3>Applied Cryptography</h3>
+                    <p class="course-institution ethz">ETHZ</p>
+                    <a href="https://appliedcrypto.ethz.ch/education/past-courses/ss-2020/ac-ss2020.html" target="_blank" class="course-link">View Course</a>
+                </div>
+
+
+
+                <div class="course-card">
+                    <h3>Software Security</h3>
+                    <p class="course-institution epfl">EPFL</p>
+                    <a href="https://edu.epfl.ch/coursebook/en/software-security-CS-412" target="_blank" class="course-link">View Course</a>
+                </div>
+    
+                <div class="course-card">
+                    <h3>Big Data</h3>
+                    <p class="course-institution ethz">ETHZ</p>
+                    <a href="https://systems.ethz.ch/education/courses/2022-autumn-semester/big-data.html" target="_blank" class="course-link">View Course</a>
+                </div>
+    
+                <div class="course-card">
+                    <h3>Machine Learning</h3>
+                    <p class="course-institution epfl">EPFL</p>
+                    <a href="https://www.epfl.ch/labs/mlo/machine-learning-cs-433/" target="_blank" class="course-link">View Course</a>
+                </div>
+    
+                <div class="course-card">
+                    <h3>Advanced topics on privacy enhancing technologies</h3>
+                    <p class="course-institution epfl">EPFL</p>
+                    <a href="https://edu.epfl.ch/coursebook/en/advanced-topics-on-privacy-enhancing-technologies-CS-523" target="_blank" class="course-link">View Course</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>Network Security</h3>
+                    <p class="course-institution ethz">ETHZ</p>
+                    <a href="https://www.vorlesungen.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2023W&ansicht=ALLE&lerneinheitId=173649&lang=en" target="_blank" class="course-link">View Course</a>
+                </div>
+
+
+                <div class="course-card">
+                    <h3>Number Theory in Cryptography</h3>
+                    <p class="course-institution epfl">EPFL</p>
+                    <a href="https://edu.epfl.ch/coursebook/en/number-theory-ii-c-cryptography-MATH-489" target="_blank" class="course-link">View Course</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>Privacy Enhancing Technologies</h3>
+                    <p class="course-institution ethz">ETHZ</p>
+                    <a href="https://spylab.ai/teaching/pets-f24/" target="_blank" class="course-link">View Course</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>Seminar on security protocols and applications</h3>
+                    <p class="course-institution epfl">EPFL</p>
+                    <a href="https://edu.epfl.ch/coursebook/fr/student-seminar-security-protocols-and-applications-COM-506" target="_blank" class="course-link">View Course</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>TCP/IP Networking</h3>
+                    <p class="course-institution epfl">EPFL</p>
+                    <a href="https://edu.epfl.ch/coursebook/en/tcp-ip-networking-COM-407" target="_blank" class="course-link">View Course</a>
+                </div>
+
+                <div class="course-card">
+                    <h3>Information security and privacy</h3>
+                    <p class="course-institution epfl">EPFL</p>
+                    <a href="https://edu.epfl.ch/coursebook/en/information-security-and-privacy-COM-402" target="_blank" class="course-link">View Course</a>
+                </div>
+            </div>
         </div>
     </section>
+    
+    
+
+
 
     <section id="languages" class="section">
         <div class="container">
             <h2 class="header">Languages</h2>
-            <table id="languagesTable" class="highlight responsive-table">
-                <thead>
-                    <tr>
-                        <th>Language</th>
-                        <th>Level</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Albanian</td>
-                        <td>Native </td>
-                    </tr>
-                    <tr>
-                        <td>English</td>
-                        <td>Bilingual </td>
-                    </tr>
-                    <tr>
-                        <td>French</td>
-                        <td>Bilingual </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="languages-grid">
+                <div class="language-card">
+                    <h3>Albanian</h3>
+                    <span class="language-level native">Native</span>
+                </div>
+    
+                <div class="language-card">
+                    <h3>English</h3>
+                    <span class="language-level bilingual">Bilingual</span>
+                </div>
+    
+                <div class="language-card">
+                    <h3>French</h3>
+                    <span class="language-level bilingual">Bilingual</span>
+                </div>
+            </div>
         </div>
     </section>
+    
 
     <section id="contact" class="section">
         <div class="container">

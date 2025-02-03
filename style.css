@@ -495,7 +495,21 @@ a {
 }
 
 .basic {
-    background-color: #808080; /*
+    background-color: #808080; 
+}
+
+a[href*="lasec.epfl.ch"] {
+    color: #20C20E; /* EPFL Green */
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+a[href*="lasec.epfl.ch"]:hover {
+    color: #16C60C;
+    text-shadow: 0 0 8px rgba(32, 194, 14, 0.7);
+}
 
 
-  
+

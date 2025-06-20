@@ -36,10 +36,9 @@ body, html {
 body {
     font-family: 'Courier New', Courier, monospace;
     color: var(--text-color); 
-    font-size: 16px;
-    
+    font-size: 18px; /* Increased from 16px */
+    line-height: 1.7;
 }
-
 /* Navbar customizations */
 .nav-wrapper {
     background-color:var(--body-bg-color); 
@@ -513,14 +512,87 @@ a[href*="lasec.epfl.ch"]:hover {
 
 .current-tag {
     display: inline-block;
-    background-color: #20C20E;
-    color: #000;
+    background-color: #ffffff;
+    color: #151515;
     font-size: 0.75rem;
-    font-weight: bold;
+    font-weight: 600;
     padding: 4px 10px;
-    border-radius: 12px;
+    border-radius: 10px;
     margin-bottom: 10px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    box-shadow: 0 0 6px #16C60C;
+    letter-spacing: 0.4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ddd;
+}
+
+
+
+/* Styling for the new About Me section with profile picture */
+.about-me-container {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    gap: 3rem;           /* Space between picture and text */
+    margin-top: 2rem;
+}
+
+.profile-picture-container {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 8px; /* Slight rounding for modern feel */
+    border: 1px solid #444; /* Subtle frame */
+    box-shadow: 0 0 12px rgba(0, 255, 100, 0.15), 0 2px 8px rgba(0, 0, 0, 0.5); /* Soft layered glow and depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-picture:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(32, 194, 14, 0.4), 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.about-me-text {
+    flex: 1; /* Allows the text to take up the remaining space */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about-me-container {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .profile-picture-container {
+        flex-basis: 180px; /* Slightly smaller picture on mobile */
+    }
+}
+
+
+h2.header {
+    font-size: 2rem; /* default was likely ~1.5rem */
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+.course-card h3,
+.language-card h3 {
+    font-size: 1.2rem;
+}
+
+.card-action a,
+.chip {
+    font-size: 1rem;
 }

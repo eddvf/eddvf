@@ -511,5 +511,16 @@ a[href*="lasec.epfl.ch"]:hover {
     text-shadow: 0 0 8px rgba(32, 194, 14, 0.7);
 }
 
-
-
+.current-tag {
+    display: inline-block;
+    background-color: #20C20E;
+    color: #000;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 6px #16C60C;
+}
